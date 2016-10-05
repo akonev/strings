@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="pendulum_wx_w" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/pp_string" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="E:/Programming/wxWin/wxWidgets2.8/lib/gcc_lib/mswu" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="E:/Programming/wxWin/wxWidgets2.8/lib/gcc_lib/mswu" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="libwxmsw28u.a" />
+					<Add library="libwxpng.a" />
+					<Add library="libwxjpeg.a" />
+					<Add library="libwxtiff.a" />
+					<Add library="libwxzlib.a" />
+					<Add library="libwxmsw28u_gl.a" />
+					<Add library="libglu32.a" />
+					<Add library="libopengl32.a" />
+					<Add directory="E:/Programming/wxWin/wxWidgets2.8/lib/gcc_lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/pp_string" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Option projectLibDirsRelation="0" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="E:/Programming/wxWin/wxWidgets2.8/lib/gcc_lib/mswu" />
+					<Add directory="../../../Desktop/wxWidgets-2.8.12/wxWidgets-2.8.12/lib/gcc_lib/mswu" />
+					<Add directory="../libs_for_win32/include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="E:/Programming/wxWin/wxWidgets2.8/lib/gcc_lib/mswu" />
+					<Add directory="../../../Desktop/wxWidgets-2.8.12/wxWidgets-2.8.12/lib/gcc_lib/mswu" />
+					<Add directory="../libs_for_win32" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="libwxmsw28u.a" />
+					<Add library="libwxpng.a" />
+					<Add library="libwxjpeg.a" />
+					<Add library="libwxtiff.a" />
+					<Add library="libwxzlib.a" />
+					<Add library="libwxmsw28u_gl.a" />
+					<Add library="libglu32.a" />
+					<Add library="libopengl32.a" />
+					<Add directory="E:/Programming/wxWin/wxWidgets2.8/lib/gcc_lib" />
+					<Add directory="../../../Desktop/wxWidgets-2.8.12/wxWidgets-2.8.12/lib/gcc_lib" />
+					<Add directory="../libs_for_win32/libs" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-pipe" />
+			<Add option="-mthreads" />
+			<Add option='[[if (PLATFORM == PLATFORM_MSW &amp;&amp; (GetCompilerFactory().GetCompilerVersionString(_T(&quot;gcc&quot;)) &gt;= _T(&quot;4.0.0&quot;))) print(_T(&quot;-Wno-attributes&quot;));]]' />
+			<Add option="`wx-config --cflags`" />
+			<Add option="-D__GNUWIN32__" />
+			<Add option="-D__WXMSW__" />
+			<Add option="-DwxUSE_UNICODE" />
+			<Add directory="../../../../wxWidgets-2.8.12/include" />
+			<Add directory="../../../../wxWidgets-2.8.12/contrib/include" />
+			<Add directory="../../project_x/Project_X_III/dev/win32/include" />
+			<Add directory="../../../Desktop/wxWidgets-2.8.12/wxWidgets-2.8.12/include" />
+			<Add directory="../libs_for_win32/include" />
+			<Add directory="../../../Desktop/wxWidgets-2.8.12/wxWidgets-2.8.12/contrib/include" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="../../../../wxWidgets-2.8.12/include" />
+			<Add directory="../../../Desktop/wxWidgets-2.8.12/wxWidgets-2.8.12/include" />
+		</ResourceCompiler>
+		<Linker>
+			<Add option="-lfreetype" />
+			<Add library="libkernel32.a" />
+			<Add library="libuser32.a" />
+			<Add library="libgdi32.a" />
+			<Add library="libwinspool.a" />
+			<Add library="libcomdlg32.a" />
+			<Add library="libadvapi32.a" />
+			<Add library="libshell32.a" />
+			<Add library="libole32.a" />
+			<Add library="liboleaut32.a" />
+			<Add library="libuuid.a" />
+			<Add library="libcomctl32.a" />
+			<Add library="libwsock32.a" />
+			<Add library="libodbc32.a" />
+			<Add directory="../../project_x/Project_X_III/dev/win32/libs" />
+			<Add directory="../../../../wxWidgets-2.8.12/lib/gcc_lib" />
+			<Add directory="../../../Desktop/wxWidgets-2.8.12/wxWidgets-2.8.12/lib/gcc_lib" />
+			<Add directory="../libs_for_win32/libs" />
+		</Linker>
+		<Unit filename="FreeType.cpp" />
+		<Unit filename="FreeType.h" />
+		<Unit filename="_dstr_EnergyGraphic.cpp" />
+		<Unit filename="_dstr_EnergyGraphic.h" />
+		<Unit filename="_hlc_EnergyGraphic.cpp" />
+		<Unit filename="_hlc_EnergyGraphic.h" />
+		<Unit filename="_str_EnergyGraphic.cpp" />
+		<Unit filename="_str_EnergyGraphic.h" />
+		<Unit filename="_str_HarmGraphic.cpp" />
+		<Unit filename="_str_HarmGraphic.h" />
+		<Unit filename="phys_src/calc.cpp" />
+		<Unit filename="phys_src/calc.h" />
+		<Unit filename="phys_src/gaus_jordan.cpp" />
+		<Unit filename="phys_src/gaus_jordan.h" />
+		<Unit filename="phys_src/harm_ph_env_border.cpp" />
+		<Unit filename="phys_src/harm_ph_env_border.h" />
+		<Unit filename="phys_src/harm_ph_string.cpp" />
+		<Unit filename="phys_src/harm_ph_string.h" />
+		<Unit filename="phys_src/lim_harm_ph_string.cpp" />
+		<Unit filename="phys_src/lim_harm_ph_string.h" />
+		<Unit filename="phys_src/list.cpp" />
+		<Unit filename="phys_src/list.h" />
+		<Unit filename="phys_src/math_and_ph_consts_define.h" />
+		<Unit filename="phys_src/oscillating_string_cont.cpp" />
+		<Unit filename="phys_src/oscillating_string_cont.h" />
+		<Unit filename="phys_src/oscillating_string_discr.cpp" />
+		<Unit filename="phys_src/oscillating_string_discr.h" />
+		<Unit filename="phys_src/ph_string.cpp" />
+		<Unit filename="phys_src/ph_string.h" />
+		<Unit filename="ppStringController.cpp" />
+		<Unit filename="pp_string.h" />
+		<Unit filename="pp_stringApp.cpp" />
+		<Unit filename="pp_stringApp.h" />
+		<Unit filename="pp_stringMain.cpp" />
+		<Unit filename="pp_stringMain.h" />
+		<Unit filename="resource.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="select.cpp" />
+		<Unit filename="select.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="pendulum_wx_wApp.cpp" main="pendulum_wx_wFrame" init_handlers="necessary" language="CPP" />
+				<resources>
+					<wxFrame wxs="wxsmith/pendulum_wx_wframe.wxs" src="pendulum_wx_wMain.cpp" hdr="pendulum_wx_wMain.h" fwddecl="0" i18n="1" name="pendulum_wx_wFrame" language="CPP" />
+					<wxDialog wxs="wxsmith/AboutDialog.wxs" src="AboutDialog.cpp" hdr="AboutDialog.h" fwddecl="0" i18n="1" name="AboutDialog" language="CPP" />
+				</resources>
+			</wxsmith>
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
